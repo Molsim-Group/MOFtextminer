@@ -1,0 +1,65 @@
+water # water, h2o, aqueous
+DMF # dmf, N,N-dimethylformamide, dimethylformamide, N,N'-dimethylformamide,
+methanol # methanol, CH3OH, MeOH
+ethanol # ethanol, EtOH, C2H5OH
+NaOH # NaOH, sodium hydroxide
+THF # THF, tetrahydrofuran
+acetonitrile # acetonitrile, CH3CN, MeCN
+dichloromethane # dichloromethane, CH2Cl2,
+HNO3 # HNO3, nitric acid, 
+acetone # acetone
+toluene # toluene
+KOH # KOH, 
+triethylamine # triethylamine, Et3N
+diethyl ether # diethyl ether, Et2O, diethylether
+DMA # DMA, N,N'-dimethylacetamide
+NaN3 # NaN3, sodium azid
+pyridine # pyridine
+chloroform # chloroform, CHCl3
+HCl # HCl, hydrochloric acid
+benzene # benzene, 
+DMSO # dmso, dimethylsulfoxide
+DEF # def, Dimethoxyethane, glyme
+
+
+### 200 ###
+# HF
+# Na2CO3
+Na2CO3, Sodium carbonate
+# KSCN
+KSCN, Potassium thiocyanate, 
+# acetic acid
+acetic acid, CH3COOH, HOAc
+# NH3
+ammonia
+# phosphorous acid
+H3PO3
+# K2CO3
+# ethylenediamine
+# KI
+# NaHCO3
+# HBF4
+HBF4, Tetrafluoroboric acid, Fluoroboric acid, 
+
+### 100 ###
+# 1,4-dioxane
+# KNO3
+# p-xylene
+# NaNO3
+NaNO3, Sodium nitrate
+# Na2C2O4
+Na2C2O4, Sodium oxalate, 
+# trifluoroacetic acid
+trifluoroacetic, TFA, 
+# NaNCS
+NaNCS, NaSCN, Sodium thiocyanate
+# piperazine
+# heptane
+# Me2CO
+# butanol
+# ethylene glycol
+# pyridine
+# NH4Cl
+# diethylether
+# benzonitrile
+### 30 ###
