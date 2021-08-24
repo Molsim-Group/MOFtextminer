@@ -3,9 +3,12 @@ import os
 from pathlib import Path
 from chemdataextractor.doc import Paragraph, Heading
 from gensim.utils import SaveLoad, simple_preprocess
+from gensim.corpora.dictionary import Dictionary
 import numpy as np
 import joblib
 import pickle
+import json
+
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
 
@@ -22,12 +25,19 @@ rnn_model_with_char = load_model(str(path_model_char))
 path_model_no_char = Path(__file__).parent / "libs/mer/keras/bilstmcrf"
 rnn_model_without_char = load_model(str(path_model_no_char))
 
+def import_bows(path):
+    with open(path)) as f:
+        data = json.load(f)
+        bow_dictionary = Dictionary()
+        bow_dictionary.merge_with(data)
+    return bow_dictionary
+
 
 def get_method_paragraphs(elements):
     abs_path = Path(__file__).parent
-    bow_dictionary = SaveLoad.load(str(abs_path/"libs/paragraph_recognition/bows_dictionary"))
+    bow_dictionary = import_bows(str(abs_path/"libs/paragraph_recognition/bow_dictionary.json"))
     log_reg = joblib.load(str(abs_path/"libs/paragraph_recognition/logreg_binary_method.sav"))
-
+    
     method_paragraphs = []
 
     for i, element in enumerate(elements):
